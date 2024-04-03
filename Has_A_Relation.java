@@ -56,7 +56,7 @@ class Student{
 public class Has_A_Relation {
     public static void main(String[] args ){
         //Creating object of Name class to assign name to student
-        Name n1= new Name("Priyanka","Das","Gupta");
+        Name n1= new Name("Deshankar","Das","Gupta");
         //Creating object of Address class to assign address to the student
         Address a1= new Address("21/h/15","Kolkata",700030);
         //Creating object of Student class
