@@ -61,7 +61,7 @@ public class Has_A_Relation {
         //Creating object of Address class to assign address to the student
         Address a1= new Address("21/h/15","Kolkata",700030);
         //Creating object of Student class
-        Student s1=new Student("KendraVidyalay","22/05/2009",n1,a1);
+        Student s1=new Student("KendraVidyalay ","22/05/2009",n1,a1);
         System.out.println(s1);
 
     }
