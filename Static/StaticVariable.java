@@ -14,9 +14,9 @@
         StaticVariable sv1= new StaticVariable();
         StaticVariable sv2= new StaticVariable();
         //the static variable is used to count the number of objects created against a class
-        
-        System.out.println("The Counter value: "+counter);
-        //since counter is static, it can be called without object specification within the same class
+
+        System.out.println("The Counter value: "+StaticVariable.counter);
+        //since counter is static, it can be called without object specification and just calling through class name
         sv1.x=10; sv1.z=10;
         System.out.println("The Variable value for object 1 x= "+sv1.x+" z= "+sv1.z);
         
