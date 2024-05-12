@@ -45,7 +45,7 @@ public class FileReverse {
         System.out.println(newch);
         in.close();
 
-        
+
     }
 
 }
