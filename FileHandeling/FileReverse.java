@@ -1,7 +1,9 @@
 package FileHandeling;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.*;
 
 
@@ -14,6 +16,13 @@ public class FileReverse {
             newch = ch + newch;
         }
         return newch;
+    }
+    public static void WriteToFile(String file,String newch,int position) throws FileNotFoundException,IOException{
+        RandomAccessFile f1 = new RandomAccessFile(file,"rw");
+        f1.seek(position);
+        f1.write(newch.getBytes());
+        f1.close();
+        
     }
     public static void main(String[] args) throws IOException{
         //file creation
@@ -45,6 +54,7 @@ public class FileReverse {
         System.out.println(newch);
         in.close();
 
+        WriteToFile("File2.txt",newch,20);
 
     }
 
