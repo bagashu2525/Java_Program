@@ -30,9 +30,9 @@ public class FileReverse {
         //f1.createNewFile();
 
         //file write
-        // FileWriter out = new FileWriter(f1);
-        // out.write("hello world");
-        // out.close();
+        FileWriter out = new FileWriter(f1);
+        out.write("hello world");
+        out.close();
 
         //file read using scanner class
         Scanner in = new Scanner(f1);
@@ -54,7 +54,10 @@ public class FileReverse {
         System.out.println(newch);
         in.close();
 
-        WriteToFile("File2.TXT",newch,18);
+        //WriteToFile("File2.TXT",newch,18);
+        FileWriter writer = new FileWriter("File2.TXT",true);
+        writer.write(newch);
+        writer.close();
 
     }
 
