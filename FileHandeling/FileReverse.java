@@ -54,7 +54,7 @@ public class FileReverse {
         System.out.println(newch);
         in.close();
 
-        WriteToFile("File2.txt",newch,20);
+        WriteToFile("File2.TXT",newch,20);
 
     }
 
