@@ -15,6 +15,8 @@ public class StringConcate {
         String strng1 = sc.nextLine();
         System.out.println("Enetr a String2: ");
         String strng2 = sc.nextLine();
+
+        //string concatenation
         String newConcate = strng1.concat(strng2);
         System.out.println("The Concated String is : "+newConcate);
         calulateCapital(newConcate);
